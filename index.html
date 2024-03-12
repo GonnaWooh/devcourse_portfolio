@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>portfolio</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      #txt_welcome {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .card {
+        text-align: center;
+      }
+
+      .card_title {
+        font-size: 20px;
+      }
+
+      .card_button {
+        font-size: 25px;
+        width: 150px;
+        height: 30px;
+      }
+
+      .card_img {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Geonwoo's Portfolio</h1>
+    <div id="txt_welcome">
+      아직 완성하지 않은 개발자 김건우의 포트폴리오입니다.<br />
+      지속적으로 업데이트 예정입니다.
+      <br />
+      <br />
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr">
+      <div class="card">
+        <img class="card_img" src="./img/01.png" />
+        <p class="card_title">Blog</p>
+        <input
+          class="card_button"
+          type="button"
+          value="order"
+          onclick="alert('업데이트 예정입니다.')"
+          temp="location.href='/order?productId=1'"
+        />
+      </div>
+      <div class="card">
+        <img class="card_img" src="./img/02.png" />
+        <p class="card_title">Admin Panel</p>
+        <input
+          class="card_button"
+          type="button"
+          value="order"
+          onclick="alert('업데이트 예정입니다.')"
+        />
+      </div>
+      <div class="card">
+        <img class="card_img" src="./img/03.png" />
+        <p class="card_title">Recipe Maker</p>
+        <input
+          class="card_button"
+          type="button"
+          value="order"
+          onclick="alert('업데이트 예정입니다.')"
+        />
+      </div>
+    </div>
+  </body>
+</html>
